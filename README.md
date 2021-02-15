@@ -1,2 +1,2 @@
 # Python
-Python test that I like to try
+Here you are going to see very very beginner Python codes. = )
