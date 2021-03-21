@@ -5,7 +5,6 @@ Minuteinput = int(input("Minutes: "))
 maininputs = datetime.timedelta(hours=(Hourinput), minutes=(Minuteinput))
 print(maininputs)
 print("These next will be added into the value")
-#qwe1 = int(input("Hours: ")) /// This line was just for the testing purposes.
 Addminutes = int(input("Minutes: "))
 Addseconds = int(input("Seconds: "))
 addminutesandseconds = datetime.timedelta(minutes=(Addminutes), seconds=(Addseconds))
