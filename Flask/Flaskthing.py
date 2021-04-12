@@ -1,4 +1,4 @@
-from flask import Flask, session, redirect, url_for, request, render_template
+from flask import Flask, session, redirect, url_for, request, render_template, flash
 import flask
 from markupsafe import escape
 from flask import send_from_directory
@@ -21,9 +21,11 @@ def login():
         session.permanent = True
         user = request.form["nm"]
         session["user"] = user
+        flash("You are logged in succesfully!")
         return redirect(url_for("user"))
     else:
         if "user" in session:
+            flash("Already logged in!")
             return redirect(url_for("user"))
         return render_template("login2.html")
 
@@ -31,13 +33,16 @@ def login():
 def user():
     if "user" in session:
         user = session["user"]
-        return f"<h1>{user}</h1>"
+        return render_template("user.html", user=user)
     else:
         return redirect(url_for("login"))
 
 @app.route("/logout")
 def logout():
-    session.pop("user", None)
+    if "user" in session:
+        user = session["user"]
+        flash("You have been logged out!", "info")
+    session.pop("user", None)    
     return redirect(url_for("login"))
 
 @app.route("/admin")
