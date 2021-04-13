@@ -1,0 +1,33 @@
+class quantity():
+    water_rune = 7
+    earth_rune = 4
+    fire_rune = 6
+    mind_rune = 9
+    chaos_rune = 2
+    body_rune = 7
+    grimy_guam = 1
+    grimy_marrentill = 1
+    grimy_tarromin = 1
+    frimy_harralander = 1
+    grimy_ranarr = 1
+    grimy_kwuarm = 1
+    grimy_irit = 1
+    grimy_avantoe = 1
+    grimy_cadantine = 1
+    grimy_dwarfe_weed = 1
+    chargebow = 1
+    bronze_bolts 2, 12
+    bronze_arrow = 7
+    tiny_spiky_iron_salvage = 1
+    tiny_plated_bronze_salvage = 1
+    staff_of_air = 1
+    air_talisman = 1
+    earth_talisman = 1
+    cabbage = 1
+    fishing_bait = 1
+    copper_stone_spirit = 1
+    tin_stone_spirit = 1
+    coins = 1, 40
+    sealed_clue_scroll (easy) = 1
+    key_token = 1
+    mimic_kill_token = 1
