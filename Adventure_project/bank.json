@@ -1,0 +1,22 @@
+{
+    "Logs": {
+        "name": "Logs",
+        "quantity": 399
+    },
+    "Oak logs": {
+        "name": "Oak logs",
+        "quantity": 638
+    },
+    "Teak logs": {
+        "name": "Teak logs",
+        "quantity": 2
+    },
+    "Willow logs": {
+        "name": "Willow logs",
+        "quantity": 34
+    },
+    "Bronze axe": {
+        "name": "Bronze axe",
+        "quantity": 34
+    }
+}
