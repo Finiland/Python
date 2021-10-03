@@ -34,9 +34,23 @@ def checkItemFromBank(item, quantity):
     name = data[f'{item}']['name'] 
     quantity = data[f'{item}']['quantity']
     return name, quantity
+
     
 def minusItemFromBank(item, quantity):
     with open('bank.json', 'r') as f:
         data = json.load(f)
-    minus = data[f'{item}']['quantity'] - quantity
-    
+        data[f'{item}']['quantity'] -= quantity
+    with open('bank.json', 'w') as f:
+        data = json.dump(data, f, indent=4)
+        f.close()
+
+
+def resetBank():
+    with open('bank.json', 'r') as f:
+        data = json.load(f)
+        for item in data:
+            print(item)
+            data[item]['quantity'] = 0
+    with open('bank.json', 'w') as f:
+        data = json.dump(data, f, indent=4)
+        f.close()

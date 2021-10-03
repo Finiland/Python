@@ -11,10 +11,74 @@ import LootTable
 
 levels = [0,83,174,276,388,512,650,801,969,1154,1358,1584,1833,2107,2411,2746,3115,3523,3973,4470,5018,5624,6291,7028,7842,8740,9730,10824,12031,13363,14833,16456,18247,20224,22406,24815,27473,30408,33648,37224,41171,45529,50339,55649,61512,67983,75127,83014,91721,101333,111945,123660,136594,150872,166636,184040,203254,224466,247886,273742,302288,333804,368599,407015,449428,496254,547953,605032,668051,737627,814445,899257,992895,1096278,1210421,1336443,1475581,1629200,1798808,1986068,2192818,2421087,2673114,2951373,3258594,3597792,3972294,4385776,4842295,5346332,5902831,6517253,7195629,7944614,8771558,9684577,10692629,11805606,13034431,14391160,15889109,17542976,19368992,21385073,23611006,26068632,28782069,31777943,35085654,38737661,42769801,47221641,52136869,57563718,63555443,70170840,77474828,85539082,94442737,104273167,115126838,127110260,140341028,154948977,171077457,188884740]
 
-axes = ["Bronze axe", "Iron axe", "Steel axe", "Black axe", "Adamant axe", "Rune axe", "Dragon axe", "Crystal axe"]
-
-
-
+axes = {
+    "Bronze axe": {
+        "name": "Bronze axe",
+        "reduction": 0.95,
+        "level": 1,
+        "reduction_number": 5,
+    },
+    "Iron axe": {
+        "name": "Iron axe",
+        "reduction": 0.90,
+        "level": 1,
+        "reduction_number": 10,
+},
+    "Steel axe": {
+        "name": "Steel axe",
+        "reduction": 0.85,
+        "level": 5,
+        "reduction_number": 15,
+},
+    "Black axe": {
+        "name": "Black axe",
+        "reduction": 0.80,
+        "level": 11,
+        "reduction_number": 20,
+}, 
+    "Mithril axe": {
+        "name": "Mithril axe",
+        "reduction": 0.75,
+        "level": 21,
+        "reduction_number": 25,
+}, 
+    "Adamant axe": {
+        "name": "Adamant axe",
+        "reduction": 0.70,
+        "level": 31,
+        "reduction_number": 30,
+}, 
+    "Rune axe": {
+        "name": "Rune axe",
+        "reduction": 0.65,
+        "level": 41,
+        "reduction_number": 35,
+}, 
+    "Dragon axe": {
+        "name": "Dragon axe",
+        "reduction": 0.55,
+        "level": 61,
+        "reduction_number": 45,
+}, 
+    "Infernal axe": {
+        "name": "Infernal axe",
+        "reduction": 0.5,
+        "level": 61,
+        "reduction_number": 50,
+}, 
+    "3rd age axe": {
+        "name": "3rd age axe",
+        "reduction": 0.30,
+        "level": 61,
+        "reduction_number": 70,
+}, 
+    "Crystal axe": {
+        "name": "Crystal axe",
+        "reduction": 0.45,
+        "level": 71,
+        "reduction_number": 55,
+}, 
+}
 class Trees(object):
     class NormalTree(object):
         name = "Logs"
@@ -86,8 +150,16 @@ class Trees(object):
         xp = 175
         level = 60
         loot = "Yew_Logs"
-        loot = "Yew logs"
+        loot_name = "Yew logs"
         time = 2.6
+        amount = 1
+    class BlisterwoodTree(object):
+        name = "Blisterwood"
+        xp = 76
+        level = 62
+        loot = "Blisterwood_logs"
+        loot_name = "Blisterwood logs"
+        time = 2.7
         amount = 1
     class SulliuscepsTree(object):
         name = "Sulliusceps"
@@ -121,6 +193,15 @@ class Trees(object):
         loot_name = "Elder logs"
         time = 3.4
         amount = 1
+    class HacksTree(object):
+        name = "Hacks"
+        xp = 1
+        level = 1
+        loot = "Logs"
+        loot_name = "Logs", "Oak logs", "Willow logs", "Teak logs", "Maple logs", "Bark", "Mahogany logs", "Arctic pine logs", "Yew logs", "Blisterwood logs", "Sulliusceps", "Magic logs", "Redwood logs", "Elder logs"
+        time = 0.01
+        amount = 1
+        alias = "logs", "Logs", "LoGs", "lOgs"
 
         
 def stopping_maybe():
@@ -140,7 +221,7 @@ def cutChoiceLogs():
     level = data['woodcutting level']
     woodcuttingXp = data['woodcutting xp']
     levelChecker()
-    cutChoice = input("What kind of trees you would want to cut? Here are your possibilities: 1. Logs, 2. Oak, 3. Willow, 4. Teak, 5. Maple, 6. Bark, 7. Mahogany, 8. Arctic, 9. Yew, 10. Sulliusceps, 11. Magic, 12. Redwood, 13. Elder\n")
+    cutChoice = input("What kind of trees you would want to cut? Here are your possibilities: 1. Logs (1), 2. Oak (15), 3. Willow (30), 4. Teak (35), 5. Maple (45), 6. Bark (45), 7. Mahogany (50), 8. Arctic (54), 9. Yew (60), 10. Sulliusceps (65), 11. Magic (75), 12. Redwood (90), 13. Elder (105)\n")
     if cutChoice == "1":
         logType = Trees.NormalTree
         print("You have selected", logType.name,"... Here some info about it")
@@ -332,6 +413,23 @@ def cutChoiceLogs():
             cutState(logType, woodcuttingXp)
             levelChecker()
             return logType
+    elif cutChoice == "hacks":
+        LootTable.addItemToBank(Trees.NormalTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.OakTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.WillowTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.TeakTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.MapleTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.MapleTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.MapleTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.BarkTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.MahoganyTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.ArcticTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.YewTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.SulliuscepsTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.MagicTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.RedwoodTree.loot_name, 1)
+        LootTable.addItemToBank(Trees.ElderTree.loot_name, 1)
+        cutChoiceLogs()
     else:
         time.sleep(1)
         os.system('clear')
@@ -350,17 +448,50 @@ def cutState(logType, woodcuttingXp):
     
     while data != 0:
 ''' 
-    axe = False
     with open("bank.json", "r") as f:
         data = json.load(f)
         f.close()
-    print(axes)
-    for y in axes:
-        if y in data:
-            axe = True
-    if axe == True:
-        time.sleep(logType.time * 0.35)
-        os.system('clear')    
+    with open("stats.json", 'r') as f:
+        level2 = json.load(f)
+        f.close()
+    if axes["Crystal axe"]["name"] in data and level2['woodcutting level'] >= axes["Crystal axe"]["level"]:
+        current_axe = axes["Crystal axe"]
+    else:
+        if axes["3rd age axe"]["name"] in data and level2['woodcutting level'] >= axes["3rd age axe"]["level"]:
+            current_axe = axes["3rd age axe"]
+        else:
+            if axes["Infernal axe"]["name"] in data and level2['woodcutting level'] >= axes["Infernal axe"]["level"]:
+                current_axe = axes["Infernal axe"]
+            else:
+                if axes["Dragon axe"]["name"] in data and level2['woodcutting level'] >= axes["Dragon axe"]["level"]:
+                    current_axe = axes["Dragon axe"]
+                else:
+                    if axes["Rune axe"]["name"] in data and level2['woodcutting level'] >= axes["Rune axe"]["level"]:
+                        current_axe = axes["Rune axe"]
+                    else:
+                        if axes["Adamant axe"]["name"] in data and level2['woodcutting level'] >= axes["Adamant axe"]["level"]:
+                            current_axe = axes["Adamant axe"]
+                        else:
+                            if axes["Mithril axe"]["name"] in data and level2['woodcutting level'] >= axes["Mithril axe"]["level"]:
+                                current_axe = axes["Mithril axe"]
+                            else:
+                                if axes["Black axe"]["name"] in data and level2['woodcutting level'] >= axes["Black axe"]["level"]:
+                                    current_axe = axes["Black axe"]
+                                else:
+                                    if axes["Steel axe"]["name"] in data and level2['woodcutting level'] >= axes["Steel axe"]["level"]:
+                                        current_axe = axes["Steel axe"]
+                                    else:
+                                        if axes["Iron axe"]["name"] in data and level2['woodcutting level'] >= axes["Iron axe"]["level"]:
+                                            current_axe = axes["Iron axe"]
+                                        else:
+                                            if axes["Bronze axe"]["name"] in data and level2['woodcutting level'] >= axes["Bronze axe"]["level"]:
+                                                current_axe = axes["Bronze axe"]
+                                            else:
+                                                current_axe = None
+    if current_axe != None:
+        time.sleep(logType.time * current_axe["reduction"])
+        os.system('clear')   
+        print("############## YOU ARE CHOPPING THE LOGS", current_axe["reduction_number"], "%", "FASTER BECAUSE OF YOUR", current_axe["name"], "##############")
         print("You managed to get 1", logType.loot_name)
         print("You gained", logType.xp, "XP")
         with open("stats.json", "r") as f:
@@ -370,7 +501,8 @@ def cutState(logType, woodcuttingXp):
         woodcuttingXp = int(woodcuttingXp) + logType.xp
         woodcuttingLevel = data['woodcutting level']
         print("You have now", float(woodcuttingXp), "in Woodcutting skill. Level is:", int(woodcuttingLevel))
-        print(f"{levels[int(woodcuttingLevel)] - int(woodcuttingXp)} xp remaining for next level:", woodcuttingLevel + 1)  
+        print(f"{levels[int(woodcuttingLevel)] - int(woodcuttingXp)} xp remaining for next level:", woodcuttingLevel + 1)
+        print(f"You have to chop: {(levels[int(woodcuttingLevel)] - int(woodcuttingXp)) / logType.xp} logs.")
         LootTable.addItemToBank(logType.loot_name, logType.amount)
         LootTable.checkItemFromBank(logType.loot_name, logType.amount)
 
@@ -379,9 +511,9 @@ def cutState(logType, woodcuttingXp):
         levelChecker()
         cutState(logType, woodcuttingXp)
         return woodcuttingXp
-    else:
+    if current_axe == None:
         time.sleep(logType.time)
-        os.system('clear')    
+        os.system('clear') 
         print("You managed to get 1", logType.loot_name)
         print("You gained", logType.xp, "XP")
         with open("stats.json", "r") as f:
@@ -391,7 +523,11 @@ def cutState(logType, woodcuttingXp):
         woodcuttingXp = int(woodcuttingXp) + logType.xp
         woodcuttingLevel = data['woodcutting level']
         print("You have now", float(woodcuttingXp), "in Woodcutting skill. Level is:", int(woodcuttingLevel))
-        print(f"{levels[int(woodcuttingLevel)] - int(woodcuttingXp)} xp remaining for next level:", woodcuttingLevel + 1)  
+        if (f"{levels[int(woodcuttingLevel)] - int(woodcuttingXp)}") > str(0):    
+            print(f"{levels[int(woodcuttingLevel)] - int(woodcuttingXp)} xp remaining for next level:", woodcuttingLevel + 1)
+        else:
+            print("0 xp remaining for next level:", woodcuttingLevel + 1)
+        print(f"You have to chop: {math.ceil((levels[int(woodcuttingLevel)] - int(woodcuttingXp)) / logType.xp)} logs.")
         LootTable.addItemToBank(logType.loot_name, logType.amount)
         LootTable.checkItemFromBank(logType.loot_name, logType.amount)
 

@@ -1,22 +1,158 @@
 {
+    "Magic logs": {
+        "name": "Magic logs",
+        "quantity": 0
+    },
     "Logs": {
         "name": "Logs",
-        "quantity": 399
+        "quantity": 0
+    },
+    "Clay": {
+        "name": "Clay",
+        "quantity": 55
+    },
+    "Elder logs": {
+        "name": "Elder logs",
+        "quantity": 797
+    },
+    "Redwood logs": {
+        "name": "Redwood logs",
+        "quantity": 0
     },
     "Oak logs": {
         "name": "Oak logs",
-        "quantity": 638
-    },
-    "Teak logs": {
-        "name": "Teak logs",
-        "quantity": 2
+        "quantity": 0
     },
     "Willow logs": {
         "name": "Willow logs",
-        "quantity": 34
+        "quantity": 0
     },
-    "Bronze axe": {
-        "name": "Bronze axe",
-        "quantity": 34
+    "Teak logs": {
+        "name": "Teak logs",
+        "quantity": 0
+    },
+    "Maple logs": {
+        "name": "Maple logs",
+        "quantity": 0
+    },
+    "Bark": {
+        "name": "Bark",
+        "quantity": 19
+    },
+    "Mahogany logs": {
+        "name": "Mahogany logs",
+        "quantity": 0
+    },
+    "Arctic pine logs": {
+        "name": "Arctic pine logs",
+        "quantity": 0
+    },
+    "Yew logs": {
+        "name": "Yew logs",
+        "quantity": 0
+    },
+    "Sulliusceps": {
+        "name": "Sulliusceps",
+        "quantity": 0
+    },
+    "Rune essence": {
+        "name": "Rune essence",
+        "quantity": 45
+    },
+    "Copper ore": {
+        "name": "Copper ore",
+        "quantity": 0
+    },
+    "Tin ore": {
+        "name": "Tin ore",
+        "quantity": 0
+    },
+    "Limestone": {
+        "name": "Limestone",
+        "quantity": 45
+    },
+    "Blurite ore": {
+        "name": "Blurite ore",
+        "quantity": 45
+    },
+    "Iron ore": {
+        "name": "Iron ore",
+        "quantity": 45
+    },
+    "Daeyalt ore": {
+        "name": "Daeyalt ore",
+        "quantity": 45
+    },
+    "Silver ore": {
+        "name": "Silver ore",
+        "quantity": 45
+    },
+    "Volcanic ash": {
+        "name": "Volcanic ash",
+        "quantity": 45
+    },
+    "Pure essence": {
+        "name": "Pure essence",
+        "quantity": 45
+    },
+    "Coal": {
+        "name": "Coal",
+        "quantity": 48
+    },
+    "Gold ore": {
+        "name": "Gold ore",
+        "quantity": 84
+    },
+    "Mithril ore": {
+        "name": "Mithril ore",
+        "quantity": 42
+    },
+    "Adamantite ore": {
+        "name": "Adamantite ore",
+        "quantity": 42
+    },
+    "Soft clay": {
+        "name": "Soft clay",
+        "quantity": 42
+    },
+    "Runite ore": {
+        "name": "Runite ore",
+        "quantity": 42
+    },
+    "Amethyst": {
+        "name": "Amethyst",
+        "quantity": 42
+    },
+    "Uncut jade": {
+        "name": "Uncut jade",
+        "quantity": 57
+    },
+    "Uncut sapphire": {
+        "name": "Uncut sapphire",
+        "quantity": 28
+    },
+    "Uncut diamond": {
+        "name": "Uncut diamond",
+        "quantity": 85
+    },
+    "Uncut ruby": {
+        "name": "Uncut ruby",
+        "quantity": 39
+    },
+    "Uncut opal": {
+        "name": "Uncut opal",
+        "quantity": 36
+    },
+    "Uncut red topaz": {
+        "name": "Uncut red topaz",
+        "quantity": 23
+    },
+    "Uncut emerald": {
+        "name": "Uncut emerald",
+        "quantity": 25
+    },
+    "Goldsmith gauntlets": {
+        "name": "Goldsmith gauntlets",
+        "quantity": 0
     }
 }
