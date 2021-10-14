@@ -14,7 +14,7 @@ import LootTable
 
 
 def main():
-    print('Choices are: start game, chop, mine, light, smithing \n')
+    print('Choices are: start game, chop, mine, light, smith, smelt \n')
     inputteriino = input('What activity would you like to do?: ')
     if inputteriino == "start game":
         start_game()

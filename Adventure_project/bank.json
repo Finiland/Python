@@ -5,11 +5,11 @@
     },
     "Logs": {
         "name": "Logs",
-        "quantity": 0
+        "quantity": 34
     },
     "Clay": {
         "name": "Clay",
-        "quantity": 55
+        "quantity": 81
     },
     "Elder logs": {
         "name": "Elder logs",
@@ -57,102 +57,122 @@
     },
     "Rune essence": {
         "name": "Rune essence",
-        "quantity": 45
+        "quantity": 450
     },
     "Copper ore": {
         "name": "Copper ore",
-        "quantity": 0
+        "quantity": 755
     },
     "Tin ore": {
         "name": "Tin ore",
-        "quantity": 0
+        "quantity": 755
     },
     "Limestone": {
         "name": "Limestone",
-        "quantity": 45
+        "quantity": 450
     },
     "Blurite ore": {
         "name": "Blurite ore",
-        "quantity": 45
+        "quantity": 448
     },
     "Iron ore": {
         "name": "Iron ore",
-        "quantity": 45
+        "quantity": 440
     },
     "Daeyalt ore": {
         "name": "Daeyalt ore",
-        "quantity": 45
+        "quantity": 450
     },
     "Silver ore": {
         "name": "Silver ore",
-        "quantity": 45
+        "quantity": 434
     },
     "Volcanic ash": {
         "name": "Volcanic ash",
-        "quantity": 45
+        "quantity": 450
     },
     "Pure essence": {
         "name": "Pure essence",
-        "quantity": 45
+        "quantity": 450
     },
     "Coal": {
         "name": "Coal",
-        "quantity": 48
+        "quantity": 4527621702
     },
     "Gold ore": {
         "name": "Gold ore",
-        "quantity": 84
+        "quantity": 836
     },
     "Mithril ore": {
         "name": "Mithril ore",
-        "quantity": 42
+        "quantity": 420
     },
     "Adamantite ore": {
         "name": "Adamantite ore",
-        "quantity": 42
+        "quantity": 420
     },
     "Soft clay": {
         "name": "Soft clay",
-        "quantity": 42
+        "quantity": 42222
     },
     "Runite ore": {
         "name": "Runite ore",
-        "quantity": 42
+        "quantity": 3565546
     },
     "Amethyst": {
         "name": "Amethyst",
-        "quantity": 42
+        "quantity": 420
     },
     "Uncut jade": {
         "name": "Uncut jade",
-        "quantity": 57
+        "quantity": 590
     },
     "Uncut sapphire": {
         "name": "Uncut sapphire",
-        "quantity": 28
+        "quantity": 290
     },
     "Uncut diamond": {
         "name": "Uncut diamond",
-        "quantity": 85
+        "quantity": 870
     },
     "Uncut ruby": {
         "name": "Uncut ruby",
-        "quantity": 39
+        "quantity": 400
     },
     "Uncut opal": {
         "name": "Uncut opal",
-        "quantity": 36
+        "quantity": 380
     },
     "Uncut red topaz": {
         "name": "Uncut red topaz",
-        "quantity": 23
+        "quantity": 250
     },
     "Uncut emerald": {
         "name": "Uncut emerald",
-        "quantity": 25
+        "quantity": 290
     },
     "Goldsmith gauntlets": {
         "name": "Goldsmith gauntlets",
         "quantity": 0
+    },
+    "Bronze bar": {
+        "name": "Bronze bar",
+        "quantity": 233
+    },
+    "Silver bar": {
+        "name": "Silver bar",
+        "quantity": 16
+    },
+    "Runite bar": {
+        "name": "Runite bar",
+        "quantity": 151
+    },
+    "Blurite bar": {
+        "name": "Blurite bar",
+        "quantity": 2
+    },
+    "Gold bar": {
+        "name": "Gold bar",
+        "quantity": 4
     }
 }

@@ -29,8 +29,7 @@ def statusCheck():
 
 def checkItemFromBank(item, quantity):
     with open('bank.json', 'r') as f:
-        data = json.load(f)
-    
+        data = json.load(f)    
     name = data[f'{item}']['name'] 
     quantity = data[f'{item}']['quantity']
     return name, quantity

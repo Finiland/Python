@@ -12,6 +12,7 @@ class Bars(object):
     class BronzeBar(object):
         name = "Bronze bar"
         xp = 6.2
+        bar_xp = 12.5
         level = 1
         supply_1 = "Tin ore"
         supply_1_amount = 1
@@ -75,7 +76,6 @@ class Bars(object):
             loot_name = "Gold bar"
             time = 1
             amount = 1
-
         else:
             name = "Gold bar"
             xp = 22.5
@@ -120,272 +120,518 @@ class Bars(object):
         loot_name = "Runite bar"
         time = 1
         amount = 1
-
-class Bronze(object):
-    class Dagger(object):
-        name = "Bronze dagger"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze dagger"
-        time = 1
-        amount = 1
-    class Axe(object):
-        name = "Bronze axe"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze axe"
-        time = 1
-        amount = 1
-    class Mace(object):
-        name = "Bronze mace"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 2
-        material_used = "Bronze bar"
-        loot_name = "Bronze mace"
-        time = 1
-        amount = 1
-    class Mace(object):
-        name = "Bronze mace"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze mace"
-        time = 1
-        amount = 1
-    class MedHelm(object):
-        name = "Bronze med helm"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze med helm"
-        time = 1
-        amount = 1
-    class UnfinishedBolts(object):
-        name = "Bronze unfinished bolts"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze unfinished bolts"
-        time = 1
-        amount = 10
-    class Sword(object):
-        name = "Bronze sword"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze sword"
-        time = 1
-        amount = 1
-    class DartTip(object):
-        name = "Bronze dart tip"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze dart tip"
-        time = 1
-        amount = 10
-    class Wire(object):
-        name = "Bronze wire"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze wire"
-        time = 1
-        amount = 1
-    class Nails(object):
-        name = "Bronze nails"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze nails"
-        time = 1
-        amount = 15
-    class Scimitar(object):
-        name = "Bronze scimitar"
-        bars_used = 2
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze scimitar"
-        time = 1
-        amount = 1
-    class Spear(object):
-        name = "Bronze spear"
-        bars_used = 1
-        second_material = "Logs"
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze spear"
-        time = 1
-        amount = 1
-    class Hasta(object):
-        name = "Bronze hasta"
-        bars_used = 1
-        second_material = "Logs"
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze hasta"
-        time = 1
-        amount = 1
-    class Arrowtips(object):
-        name = "Bronze arrowtips"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze arrowtips"
-        time = 1
-        amount = 15
-    class CrossbowLimbs(object):
-        name = "Bronze crossbow limbs"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze crossbow limbs"
-        time = 1
-        amount = 1
-    class Longsword(object):
-        name = "Bronze longsword"
-        bars_used = 2
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze longsword"
-        time = 1
-        amount = 1
-    class JavelinHeads(object):
-        name = "Bronze javelin heads"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze javelin heads"
-        time = 1
-        amount = 5
-    class FullHelm(object):
-        name = "Bronze full helm"
-        bars_used = 2
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze full helm"
-        time = 1
-        amount = 1
-    class ThrowingKnife(object):
-        name = "Bronze throwing knife"
-        bars_used = 1
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze throwing knife"
-        time = 1
-        amount = 5
-    class SqShield(object):
-        name = "Bronze sq shield"
-        bars_used = 2
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze sq shield"
-        time = 1
-        amount = 1
-    class Warhammer(object):
-        name = "Bronze warhammer"
-        bars_used = 3
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze warhammer"
-        time = 1
-        amount = 1
-    class Battleaxe(object):
-        name = "Bronze battleaxe"
-        bars_used = 3
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze battleaxe"
-        time = 1
-        amount = 1
-    class Chainbody(object):
-        name = "Bronze chainbody"
-        bars_used = 3
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze chainbody"
-        time = 1
-        amount = 1
-    class Kiteshield(object):
-        name = "Bronze kiteshield"
-        bars_used = 3
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze arrowtips"
-        time = 1
-        amount = 1
-    class Claws(object):
-        name = "Bronze claws"
-        bars_used = 2
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze claws"
-        time = 1
-        amount = 1
-    class TwoHandedSword(object):
-        name = "Bronze 2h sword"
-        bars_used = 3
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze 2h sword"
-        time = 1
-        amount = 1
-    class Platelegs(object):
-        name = "Bronze platelegs"
-        bars_used = 3
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze platelegs"
-        time = 1
-        amount = 1
-    class Plateskirt(object):
-        name = "Bronze plateskirt"
-        bars_used = 3
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze plateskirt"
-        time = 1
-        amount = 1
-    class Platebody(object):
-        name = "Bronze platebody"
-        bars_used = 5
-        xp = bars_used * Bars.BronzeBar.bar_xp
-        level = 1
-        material_used = "Bronze bar"
-        loot_name = "Bronze platebody"
-        time = 1
-        amount = 1
-    
+class Smithing(object):
+    class Bronze(object):
+        class Dagger(object):
+            name = "Bronze dagger"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze dagger"
+            time = 1
+            amount = 1
+        class Axe(object):
+            name = "Bronze axe"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze axe"
+            time = 1
+            amount = 1
+        class Mace(object):
+            name = "Bronze mace"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 2
+            material_used = "Bronze bar"
+            loot_name = "Bronze mace"
+            time = 1
+            amount = 1
+        class MedHelm(object):
+            name = "Bronze med helm"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze med helm"
+            time = 1
+            amount = 1
+        class UnfinishedBolts(object):
+            name = "Bronze unfinished bolts"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze unfinished bolts"
+            time = 1
+            amount = 10
+        class Sword(object):
+            name = "Bronze sword"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze sword"
+            time = 1
+            amount = 1
+        class DartTip(object):
+            name = "Bronze dart tip"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze dart tip"
+            time = 1
+            amount = 10
+        class Wire(object):
+            name = "Bronze wire"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze wire"
+            time = 1
+            amount = 1
+        class Nails(object):
+            name = "Bronze nails"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze nails"
+            time = 1
+            amount = 15
+        class Scimitar(object):
+            name = "Bronze scimitar"
+            bars_used = 2
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze scimitar"
+            time = 1
+            amount = 1
+        class Spear(object):
+            name = "Bronze spear"
+            bars_used = 1
+            second_material = "Logs"
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze spear"
+            time = 1
+            amount = 1
+        class Hasta(object):
+            name = "Bronze hasta"
+            bars_used = 1
+            second_material = "Logs"
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze hasta"
+            time = 1
+            amount = 1
+        class Arrowtips(object):
+            name = "Bronze arrowtips"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze arrowtips"
+            time = 1
+            amount = 15
+        class CrossbowLimbs(object):
+            name = "Bronze crossbow limbs"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze crossbow limbs"
+            time = 1
+            amount = 1
+        class Longsword(object):
+            name = "Bronze longsword"
+            bars_used = 2
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze longsword"
+            time = 1
+            amount = 1
+        class JavelinHeads(object):
+            name = "Bronze javelin heads"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze javelin heads"
+            time = 1
+            amount = 5
+        class FullHelm(object):
+            name = "Bronze full helm"
+            bars_used = 2
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze full helm"
+            time = 1
+            amount = 1
+        class ThrowingKnife(object):
+            name = "Bronze throwing knife"
+            bars_used = 1
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze throwing knife"
+            time = 1
+            amount = 5
+        class SqShield(object):
+            name = "Bronze sq shield"
+            bars_used = 2
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze sq shield"
+            time = 1
+            amount = 1
+        class Warhammer(object):
+            name = "Bronze warhammer"
+            bars_used = 3
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze warhammer"
+            time = 1
+            amount = 1
+        class Battleaxe(object):
+            name = "Bronze battleaxe"
+            bars_used = 3
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze battleaxe"
+            time = 1
+            amount = 1
+        class Chainbody(object):
+            name = "Bronze chainbody"
+            bars_used = 3
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze chainbody"
+            time = 1
+            amount = 1
+        class Kiteshield(object):
+            name = "Bronze kiteshield"
+            bars_used = 3
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze arrowtips"
+            time = 1
+            amount = 1
+        class Claws(object):
+            name = "Bronze claws"
+            bars_used = 2
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze claws"
+            time = 1
+            amount = 1
+        class TwoHandedSword(object):
+            name = "Bronze 2h sword"
+            bars_used = 3
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze 2h sword"
+            time = 1
+            amount = 1
+        class Platelegs(object):
+            name = "Bronze platelegs"
+            bars_used = 3
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze platelegs"
+            time = 1
+            amount = 1
+        class Plateskirt(object):
+            name = "Bronze plateskirt"
+            bars_used = 3
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze plateskirt"
+            time = 1
+            amount = 1
+        class Platebody(object):
+            name = "Bronze platebody"
+            bars_used = 5
+            xp = bars_used * Bars.BronzeBar.bar_xp
+            level = 1
+            material_used = "Bronze bar"
+            loot_name = "Bronze platebody"
+            time = 1
+            amount = 1
+    class Iron(object):
+        class Dagger(object):
+            name = "Iron dagger"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 15
+            material_used = "Iron bar"
+            loot_name = "Iron dagger"
+            time = 1
+            amount = 1
+        class Axe(object):
+            name = "Iron axe"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 16
+            material_used = "Iron bar"
+            loot_name = "Iron axe"
+            time = 1
+            amount = 1
+        class Mace(object):
+            name = "Iron mace"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 17
+            material_used = "Iron bar"
+            loot_name = "Iron mace"
+            time = 1
+            amount = 1
+        class MedHelm(object):
+            name = "Iron med helm"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron med helm"
+            time = 1
+            amount = 1
+        class UnfinishedBolts(object):
+            name = "Iron unfinished bolts"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron unfinished bolts"
+            time = 1
+            amount = 10
+        class Sword(object):
+            name = "Iron sword"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron sword"
+            time = 1
+            amount = 1
+        class DartTip(object):
+            name = "Iron dart tip"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron dart tip"
+            time = 1
+            amount = 10
+        class Wire(object):
+            name = "Iron wire"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron wire"
+            time = 1
+            amount = 1
+        class Nails(object):
+            name = "Iron nails"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron nails"
+            time = 1
+            amount = 15
+        class Scimitar(object):
+            name = "Iron scimitar"
+            bars_used = 2
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron scimitar"
+            time = 1
+            amount = 1
+        class Spear(object):
+            name = "Iron spear"
+            bars_used = 1
+            second_material = "Logs"
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron spear"
+            time = 1
+            amount = 1
+        class Hasta(object):
+            name = "Iron hasta"
+            bars_used = 1
+            second_material = "Logs"
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron hasta"
+            time = 1
+            amount = 1
+        class Arrowtips(object):
+            name = "Iron arrowtips"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron arrowtips"
+            time = 1
+            amount = 15
+        class CrossbowLimbs(object):
+            name = "Iron crossbow limbs"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron crossbow limbs"
+            time = 1
+            amount = 1
+        class Longsword(object):
+            name = "Iron longsword"
+            bars_used = 2
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron longsword"
+            time = 1
+            amount = 1
+        class JavelinHeads(object):
+            name = "Iron javelin heads"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron javelin heads"
+            time = 1
+            amount = 5
+        class FullHelm(object):
+            name = "Iron full helm"
+            bars_used = 2
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron full helm"
+            time = 1
+            amount = 1
+        class ThrowingKnife(object):
+            name = "Iron throwing knife"
+            bars_used = 1
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron throwing knife"
+            time = 1
+            amount = 5
+        class SqShield(object):
+            name = "Iron sq shield"
+            bars_used = 2
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron sq shield"
+            time = 1
+            amount = 1
+        class Warhammer(object):
+            name = "Iron warhammer"
+            bars_used = 3
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron warhammer"
+            time = 1
+            amount = 1
+        class Battleaxe(object):
+            name = "Iron battleaxe"
+            bars_used = 3
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron battleaxe"
+            time = 1
+            amount = 1
+        class Chainbody(object):
+            name = "Iron chainbody"
+            bars_used = 3
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron chainbody"
+            time = 1
+            amount = 1
+        class Kiteshield(object):
+            name = "Iron kiteshield"
+            bars_used = 3
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron arrowtips"
+            time = 1
+            amount = 1
+        class Claws(object):
+            name = "Iron claws"
+            bars_used = 2
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron claws"
+            time = 1
+            amount = 1
+        class TwoHandedSword(object):
+            name = "Iron 2h sword"
+            bars_used = 3
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron 2h sword"
+            time = 1
+            amount = 1
+        class Platelegs(object):
+            name = "Iron platelegs"
+            bars_used = 3
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron platelegs"
+            time = 1
+            amount = 1
+        class Plateskirt(object):
+            name = "Iron plateskirt"
+            bars_used = 3
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron plateskirt"
+            time = 1
+            amount = 1
+        class Platebody(object):
+            name = "Iron platebody"
+            bars_used = 5
+            xp = bars_used * Bars.IronBar.bar_xp
+            level = 1
+            material_used = "Iron bar"
+            loot_name = "Iron platebody"
+            time = 1
+            amount = 1
+        
     
     
     
@@ -437,6 +683,7 @@ def smeltChoice():
             input("Press enter to continue")
             smeltState(SmeltType, smithingXp)
             levelChecker()
+            return SmeltType
         else:
             print(f"Your Smithing level is not high enough to smelt {SmeltType.name}. You need to get level {SmeltType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
             input("Press enter to continue")
@@ -455,6 +702,7 @@ def smeltChoice():
             input("Press enter to continue")
             smeltState(SmeltType, smithingXp)
             levelChecker()
+            return SmeltType
         else:
             print(f"Your Smithing level is not high enough to smelt {SmeltType.name}. You need to get level {SmeltType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
             input("Press enter to continue")
@@ -473,6 +721,7 @@ def smeltChoice():
             input("Press enter to continue")
             smeltState(SmeltType, smithingXp)
             levelChecker()
+            return SmeltType
         else:
             print(f"Your Smithing level is not high enough to smelt {SmeltType.name}. You need to get level {SmeltType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
             input("Press enter to continue")
@@ -491,6 +740,7 @@ def smeltChoice():
             input("Press enter to continue")
             smeltState(SmeltType, smithingXp)
             levelChecker()
+            return SmeltType
         else:
             print(f"Your Smithing level is not high enough to smelt {SmeltType.name}. You need to get level {SmeltType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
             input("Press enter to continue")
@@ -511,7 +761,8 @@ def smeltChoice():
             print("Time per a smelt - ", SmeltType.time, "seconds")
             input("Press enter to continue")
             smeltState(SmeltType, smithingXp)
-            levelChecker()            
+            levelChecker()
+            return SmeltType         
         else:
             print(f"Your Smithing level is not high enough to smelt {SmeltType.name}. You need to get level {SmeltType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
             input("Press enter to continue")
@@ -530,6 +781,7 @@ def smeltChoice():
             input("Press enter to continue")
             smeltState(SmeltType, smithingXp)
             levelChecker()
+            return SmeltType
         else:
             print(f"Your Smithing level is not high enough to smelt {SmeltType.name}. You need to get level {SmeltType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
             input("Press enter to continue")
@@ -548,6 +800,7 @@ def smeltChoice():
             input("Press enter to continue")
             smeltState(SmeltType, smithingXp)
             levelChecker()
+            return SmeltType
         else:
             print(f"Your Smithing level is not high enough to smelt {SmeltType.name}. You need to get level {SmeltType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
             input("Press enter to continue")
@@ -566,6 +819,7 @@ def smeltChoice():
             input("Press enter to continue")
             smeltState(SmeltType, smithingXp)
             levelChecker()
+            return SmeltType
         else:
             print(f"Your Smithing level is not high enough to smelt {SmeltType.name}. You need to get level {SmeltType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
             input("Press enter to continue")
@@ -573,9 +827,7 @@ def smeltChoice():
     else:
         smeltChoice()
 
-def smeltState(SmeltType, smithingXp):
-    time.sleep(2)
-    os.system('clear')
+def smeltState(SmeltType, smithingXp):    
     with open("bank.json", "r") as f:
         bank_data = json.load(f)
         f.close()
@@ -585,17 +837,25 @@ def smeltState(SmeltType, smithingXp):
     smithingXp = data['smithing xp']
     smithingLevel = data['smithing level']
     time.sleep(SmeltType.time)
+    os.system('clear')
     if SmeltType == Bars.GoldBar or SmeltType == Bars.SilverBar or SmeltType == Bars.IronBar or SmeltType == Bars.BluriteBar:
         ore_1 = bank_data[SmeltType.supply_1]['quantity']
-        if ore_1 > SmeltType.supply_1_amount:
+        if ore_1 >= SmeltType.supply_1_amount:
             print(LootTable.checkItemFromBank(SmeltType.supply_1, 0))
-            print(f"You got {SmeltType.xp} xp.")
+            LootTable.minusItemFromBank(SmeltType.supply_1, SmeltType.supply_1_amount)
+            LootTable.addItemToBank(SmeltType.loot_name, SmeltType.amount)
+            print(f"You smelt {SmeltType.amount} {SmeltType.loot_name}, you got {SmeltType.xp} xp.")
+            #print(f"You have now {LootTable.checkItemFromBank(SmeltType.loot_name, 0)} in your bank.")
             print("You have now", float(smithingXp), "in Smithing skill. Level is:", int(smithingLevel))
             if (f"{levels[int(smithingLevel)] - int(smithingXp)}") >= str(0):    
                 print(f"{levels[int(smithingLevel)] - int(smithingXp)} xp remaining for next level:", smithingLevel + 1)
             else:
                 print("0 xp remaining for next level:", smithingLevel + 1)        
             print(f"You have to smelt: {math.ceil((levels[int(smithingLevel)] - int(smithingXp)) / SmeltType.xp)} bars.")
+            xpChecker(SmeltType)
+            levelChecker()
+            smeltState(SmeltType, smithingXp)
+            return smithingXp
         else:
             print("You don't have enough resources to smelt these. Heading back to smelt-menu.")
             input("Press enter to continue")
@@ -603,15 +863,25 @@ def smeltState(SmeltType, smithingXp):
     else:
         ore_1 = bank_data[SmeltType.supply_1]['quantity']
         ore_2 = bank_data[SmeltType.supply_2]['quantity']
-        if ore_1 > SmeltType.supply_1_amount and ore_2 > SmeltType.supply_2_amount:
+        if ore_1 >= SmeltType.supply_1_amount and ore_2 >= SmeltType.supply_2_amount:
             print(LootTable.checkItemFromBank(SmeltType.supply_1, 0))
-            print(f"You got {SmeltType.xp} xp.")
+            print(LootTable.checkItemFromBank(SmeltType.supply_2, 0))
+            LootTable.minusItemFromBank(SmeltType.supply_1, SmeltType.supply_1_amount)
+            LootTable.minusItemFromBank(SmeltType.supply_2, SmeltType.supply_2_amount)
+            LootTable.addItemToBank(SmeltType.loot_name, SmeltType.amount)
+            print(f"You smelt {SmeltType.amount} {SmeltType.loot_name}, you got {SmeltType.xp} xp.")
+            print(f"You have now {LootTable.checkItemFromBank(SmeltType.loot_name, 0)} in your bank.")
             print("You have now", float(smithingXp), "in Smithing skill. Level is:", int(smithingLevel))
             if (f"{levels[int(smithingLevel)] - int(smithingXp)}") >= str(0):    
                 print(f"{levels[int(smithingLevel)] - int(smithingXp)} xp remaining for next level:", smithingLevel + 1)
             else:
                 print("0 xp remaining for next level:", smithingLevel + 1)        
             print(f"You have to smelt: {math.ceil((levels[int(smithingLevel)] - int(smithingXp)) / SmeltType.xp)} bars.")
+            xpChecker(SmeltType)
+            levelChecker()
+            smeltState(SmeltType, smithingXp)
+            return smithingXp
+
         else:
             print("You don't have enough resources to smelt these. Heading back to smelt-menu.")
             input("Press enter to continue")
@@ -625,15 +895,10 @@ def smithChoice():
     smithingXp = data['smithing xp']
     levelChecker()
     os.system("clear")
-    smith_input = input("What kind of bars would you like to smith? Here are your possibilities: 1. Bronze (1), 2. Blurite (8), 3. Iron (15), 4. Silver (20), 5. Steel (30), 6. Gold (40), 7. Mithril (50), \n 8. Adamant (70), 9. Runite (85) \n")
+    smith_input = input("What kind of bars would you like to smith? Here are your possibilities: 1. Bronze (1), 2. Blurite (8), 3. Iron (15), 5. Steel (30), 7. Mithril (50), \n 8. Adamant (70), 9. Runite (85) \n")
     if smith_input == "1":
-        SmithType = Bars.BronzeBar
-        print("You have selected", SmithType.name,"... Here some info about it")
-        print("Name - ", SmithType.name)
-        print("XP - ", SmithType.xp)
-        print("Level - ", SmithType.level)
-        print("Loot - ", SmithType.loot_name)
-        print("Time per a smelt - ", SmithType.time, "seconds")
+        SmithType = Smithing.Bronze
+        print("You have selected", Bars.BronzeBar.name)
         smithState(SmithType, smithingXp)
         levelChecker()
         return SmithType
@@ -648,18 +913,18 @@ def smithChoice():
             print("Time per a smelt - ", SmithType.time, "seconds")
             smithState(SmithType, smithingXp)
             levelChecker()
+            return SmithType
         else:
-            print(f"Your Smithing level is not high enough to smelt {SmithType.name}. You need to get level {SmithType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
+            print(f"Your Smithing level is not high enough to smith {SmithType.name}. You need to get level {SmithType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
     elif smith_input == "3":
-        SmithType = Bars.IronBar
-        print("You have selected", SmithType.name,"... Here some info about it")
-        print("Name - ", SmithType.name)
-        print("XP - ", SmithType.xp)
-        print("Level - ", SmithType.level)
-        print("Loot - ", SmithType.loot_name)
-        print("Time per a smelt - ", SmithType.time, "seconds")
-        smithState(SmithType, smithingXp)
-        levelChecker()
+        SmithType = Smithing.Iron
+        if smithingLevel > Bars.IronBar.level:
+            print("You have selected", Bars.IronBar.name)
+            smithState(SmithType, smithingXp)
+            levelChecker()
+            return SmithType
+        else:
+            print(f"Your Smithing level is not high enough to smith {SmithType.name}. You need to get level {SmithType.level} Smithing. Your Smithing level is currently: {smithingLevel}")
     elif smith_input == "4":
         SmithType = Bars.SteelBar
         print("You have selected", SmithType.name,"... Here some info about it")
@@ -670,8 +935,9 @@ def smithChoice():
         print("Time per a smelt - ", SmithType.time, "seconds")
         smithState(SmithType, smithingXp)
         levelChecker()
+        return SmithType
     elif smith_input == "5":
-        SmithType = Bars.IronBar
+        SmithType = Bars.MithrilBar
         print("You have selected", SmithType.name,"... Here some info about it")
         print("Name - ", SmithType.name)
         print("XP - ", SmithType.xp)
@@ -680,6 +946,29 @@ def smithChoice():
         print("Time per a smelt - ", SmithType.time, "seconds")
         smithState(SmithType, smithingXp)
         levelChecker()
+        return SmithType
+    elif smith_input == "6":
+        SmithType = Bars.AdamantBar
+        print("You have selected", SmithType.name,"... Here some info about it")
+        print("Name - ", SmithType.name)
+        print("XP - ", SmithType.xp)
+        print("Level - ", SmithType.level)
+        print("Loot - ", SmithType.loot_name)
+        print("Time per a smelt - ", SmithType.time, "seconds")
+        smithState(SmithType, smithingXp)
+        levelChecker()
+        return SmithType
+    elif smith_input == "7":
+        SmithType = Bars.RuniteBar
+        print("You have selected", SmithType.name,"... Here some info about it")
+        print("Name - ", SmithType.name)
+        print("XP - ", SmithType.xp)
+        print("Level - ", SmithType.level)
+        print("Loot - ", SmithType.loot_name)
+        print("Time per a smelt - ", SmithType.time, "seconds")
+        smithState(SmithType, smithingXp)
+        levelChecker()
+        return SmithType
     else:
         smithChoice()
 
@@ -687,6 +976,9 @@ def smithState(SmithType, smithingXp):
     with open("bank.json", "r") as f:
         data = json.load(f)
         f.close()
+    levelChecker()
+    os.system("clear")
+    print(f"What would you like to smith. Your possibilities are: 1. {SmithType.Dagger.name} ({SmithType.Dagger.level}), 2. {SmithType.Axe.name} ({SmithType.Axe.level}), 3. {SmithType.Mace.name} ({SmithType.Mace.level}), ")
 
 
 def xpChecker(SmithType):
