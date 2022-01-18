@@ -168,7 +168,8 @@ def yksinpeli():
     os.system("clear")
     AiValintaLista = ["sakset", "paperi", "kivi"]
     AiValinta = random.choice(AiValintaLista)
-    print(AiValinta, "##################################")
+    #Tämä line on Debuggausta varten. Näyttää mitä botti on valinnut.
+    #print(AiValinta, "##################################")
     pelaajanValinta = input("Minkä haluat valita? Kivi, paperi vai sakset?\n")
     if pelaajanValinta in ("Kivi", "kivi", "Paperi", "paperi", "Sakset", "sakset"):
         if pelaajanValinta in ("Kivi", "kivi") and AiValinta == "kivi":
